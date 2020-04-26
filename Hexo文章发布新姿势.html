@@ -28,8 +28,9 @@
 <meta property="og:description" content="文章摘要和截断在文章中使用 &lt;!-- more --&gt;，那么 &lt;!-- more --&gt; 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。 1&lt;!-- more --&gt;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-22T14:10:59.000Z">
-<meta property="article:modified_time" content="2020-04-26T14:04:17.333Z">
+<meta property="article:modified_time" content="2020-04-26T15:02:35.284Z">
 <meta property="article:author" content="LaoDie">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://laodie.me/Hexo%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E6%96%B0%E5%A7%BF%E5%8A%BF.html">
@@ -76,10 +77,10 @@
   </style>
 </noscript>
 
-<script src="/assets/js/DPlayer.min.js"></script><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
-</head>
+<script src="/assets/js/DPlayer.min.js"></script></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -217,13 +218,15 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>2.9k</span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
-              <span>3 分钟</span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -256,55 +259,55 @@
 <h2 id="注意标注"><a href="#注意标注" class="headerlink" title="注意标注"></a>注意标注</h2><h3 id="未定义标题"><a href="#未定义标题" class="headerlink" title="未定义标题"></a>未定义标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note %&#125;</span><br><span class="line"></span><br><span class="line">#### Header</span><br><span class="line"></span><br><span class="line">(without define class style)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <div class="note ">
-            <h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><p>(without define class style)</p>
+            <p>Header</p><p>(without define class style)</p>
           </div>
 
 
 
-<h3 id="默认标题"><a href="#默认标题" class="headerlink" title="默认标题"></a>默认标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line"></span><br><span class="line">#### Default Header</span><br><span class="line"></span><br><span class="line">Welcome to [Hexo!](https:&#x2F;&#x2F;hexo.io)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="默认标题"><a href="#默认标题" class="headerlink" title="默认标题"></a>默认标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line"></span><br><span class="line">#### Default Header</span><br><span class="line"></span><br><span class="line">Welcome to Hexo!</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <div class="note default">
-            <h4 id="Default-Header"><a href="#Default-Header" class="headerlink" title="Default Header"></a>Default Header</h4><p>Welcome to <a href="https://hexo.io" target="_blank" rel="noopener">Hexo!</a></p>
+            <p>Default Header</p><p>Welcome to Hexo!</p>
           </div>
 
 
 
-<h3 id="主要标题"><a href="#主要标题" class="headerlink" title="主要标题"></a>主要标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note primary %&#125;</span><br><span class="line"></span><br><span class="line">#### Primary Header</span><br><span class="line"></span><br><span class="line">**Welcome** to [Hexo!](https:&#x2F;&#x2F;hexo.io)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="主要标题"><a href="#主要标题" class="headerlink" title="主要标题"></a>主要标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note primary %&#125;</span><br><span class="line"></span><br><span class="line">#### Primary Header</span><br><span class="line"></span><br><span class="line">Welcome to Hexo!</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <div class="note primary">
-            <h4 id="Primary-Header"><a href="#Primary-Header" class="headerlink" title="Primary Header"></a>Primary Header</h4><p><strong>Welcome</strong> to <a href="https://hexo.io" target="_blank" rel="noopener">Hexo!</a></p>
+            <p>Primary Header</p><p>Welcome to Hexo!</p>
           </div>
 
 
 
-<h3 id="信息标题"><a href="#信息标题" class="headerlink" title="信息标题"></a>信息标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note info %&#125;</span><br><span class="line"></span><br><span class="line">### Info Header</span><br><span class="line"></span><br><span class="line">**Welcome** to [Hexo!](https:&#x2F;&#x2F;hexo.io)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="信息标题"><a href="#信息标题" class="headerlink" title="信息标题"></a>信息标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note info %&#125;</span><br><span class="line"></span><br><span class="line">### Info Header</span><br><span class="line"></span><br><span class="line">Welcome to Hexo!</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <div class="note info">
-            <p>Info Header</p><p><strong>Welcome</strong> to <a href="https://hexo.io" target="_blank" rel="noopener">Hexo!</a></p>
+            <p>Info Header</p><p>Welcome to Hexo!</p>
           </div>
 
 
 
-<h3 id="成功标题"><a href="#成功标题" class="headerlink" title="成功标题"></a>成功标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note success %&#125;</span><br><span class="line"></span><br><span class="line">#### Success Header</span><br><span class="line"></span><br><span class="line">**Welcome** to [Hexo!](https:&#x2F;&#x2F;hexo.io)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="成功标题"><a href="#成功标题" class="headerlink" title="成功标题"></a>成功标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note success %&#125;</span><br><span class="line"></span><br><span class="line">#### Success Header</span><br><span class="line"></span><br><span class="line">Welcome to Hexo!</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <div class="note success">
-            <h4 id="Success-Header"><a href="#Success-Header" class="headerlink" title="Success Header"></a>Success Header</h4><p><strong>Welcome</strong> to <a href="https://hexo.io" target="_blank" rel="noopener">Hexo!</a></p>
+            <p>Success Header</p><p>Welcome to Hexo!</p>
           </div>
 
 
 
-<h3 id="警告标题"><a href="#警告标题" class="headerlink" title="警告标题"></a>警告标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note warning %&#125;</span><br><span class="line"></span><br><span class="line">#### Warning Header</span><br><span class="line"></span><br><span class="line">**Welcome** to [Hexo!](https:&#x2F;&#x2F;hexo.io)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="警告标题"><a href="#警告标题" class="headerlink" title="警告标题"></a>警告标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note warning %&#125;</span><br><span class="line"></span><br><span class="line">#### Warning Header</span><br><span class="line"></span><br><span class="line">Welcome to Hexo!</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <div class="note warning">
-            <h4 id="Warning-Header"><a href="#Warning-Header" class="headerlink" title="Warning Header"></a>Warning Header</h4><p><strong>Welcome</strong> to <a href="https://hexo.io" target="_blank" rel="noopener">Hexo!</a></p>
+            <p>Warning Header</p><p>Welcome to Hexo!</p>
           </div>
 
 
 
-<h3 id="危险标题"><a href="#危险标题" class="headerlink" title="危险标题"></a>危险标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note danger %&#125;</span><br><span class="line"></span><br><span class="line">#### Danger Header</span><br><span class="line"></span><br><span class="line">**Welcome** to [Hexo!](https:&#x2F;&#x2F;hexo.io)</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="危险标题"><a href="#危险标题" class="headerlink" title="危险标题"></a>危险标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note danger %&#125;</span><br><span class="line"></span><br><span class="line">#### Danger Header</span><br><span class="line"></span><br><span class="line">Welcome to Hexo!</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <div class="note danger">
-            <h4 id="Danger-Header"><a href="#Danger-Header" class="headerlink" title="Danger Header"></a>Danger Header</h4><p><strong>Welcome</strong> to <a href="https://hexo.io" target="_blank" rel="noopener">Hexo!</a></p>
+            <p>Danger Header</p><p>Welcome to Hexo!</p>
           </div>
 
 
@@ -312,15 +315,15 @@
 <h3 id="没有图标说明"><a href="#没有图标说明" class="headerlink" title="没有图标说明"></a>没有图标说明</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note info no-icon %&#125;</span><br><span class="line"></span><br><span class="line">#### No icon note</span><br><span class="line"></span><br><span class="line">Note **without** icon: &#96;note info no-icon&#96;</span><br><span class="line"></span><br><span class="line">note info, note info, note info</span><br><span class="line">note info, note info, note info</span><br><span class="line">note info, note info, note info</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <div class="note info no-icon">
-            <h4 id="No-icon-note"><a href="#No-icon-note" class="headerlink" title="No icon note"></a>No icon note</h4><p>Note <strong>without</strong> icon: <code>note info no-icon</code></p><p>note info, note info, note info<br>note info, note info, note info<br>note info, note info, note info</p>
+            <p>No icon note</p><p>Note without icon: <code>note info no-icon</code></p><p>note info, note info, note info<br>note info, note info, note info<br>note info, note info, note info</p>
           </div>
 
-<h3 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h3><p>需要插件支持：hexo-tag-aplayer</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 简单示例 (id, server, type)  --&gt;</span><br><span class="line">&#123;% meting &quot;38592976&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- 进阶示例 --&gt;</span><br><span class="line">&#123;% meting &quot;38592976&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2><p>需要插件支持：hexo-tag-aplayer</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 简单示例 (id, server, type)  --&gt;</span><br><span class="line">&#123;% meting &quot;38592976&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- 进阶示例 --&gt;</span><br><span class="line">&#123;% meting &quot;38592976&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#fc6423&quot;%&#125;</span><br></pre></td></tr></table></figure>
 
 
-    <div id="aplayer-obHKNjMu" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="38592976" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
+    <div id="aplayer-UHyUkfwU" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="38592976" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#fc6423"
     ></div>
 
 <p>有关选项表如下：</p>
@@ -413,10 +416,10 @@
 <td>播放器风格色彩设置</td>
 </tr>
 </tbody></table>
-<h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><p>需要插件支持：hexo-tag-dplayer</p>
+<h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><p>需要插件支持：hexo-tag-dplayer</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% dplayer</span><br><span class="line">&quot;url&#x3D;视频地址&quot;</span><br><span class="line">&quot;pic&#x3D;图片地址&quot;</span><br><span class="line">&quot;loop&#x3D;yes&quot;</span><br><span class="line">&quot;theme&#x3D;#FADFA3&quot;</span><br><span class="line">&quot;autoplay&#x3D;false&quot;</span><br><span class="line">&quot;token&#x3D;tokendemo&quot;</span><br><span class="line">%&#125;</span><br></pre></td></tr></table></figure>
 
-<div id="dplayer5" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer5"),"theme":"#FADFA3","loop":true,"video":{"url":"https://yym-videobed.oss-cn-zhangjiakou.aliyuncs.com/20180829%20%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1%20%E5%AE%8C%E6%95%B4%E7%89%88%20%E5%B8%A6%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90%20%E6%97%A0%E6%B0%B4%E5%8D%B0.mov"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://yym-videobed.oss-cn-zhangjiakou.aliyuncs.com/20180829%20%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1%20%E5%AE%8C%E6%95%B4%E7%89%88%20%E5%B8%A6%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90%20%E6%97%A0%E6%B0%B4%E5%8D%B0.mov"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
 
     </div>
@@ -443,6 +446,9 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
 
         
 
@@ -513,7 +519,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文章摘要和截断"><span class="nav-number">1.</span> <span class="nav-text">文章摘要和截断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#居中引用"><span class="nav-number">2.</span> <span class="nav-text">居中引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意标注"><span class="nav-number">3.</span> <span class="nav-text">注意标注</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#未定义标题"><span class="nav-number">3.1.</span> <span class="nav-text">未定义标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Header"><span class="nav-number">3.1.1.</span> <span class="nav-text">Header</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#默认标题"><span class="nav-number">3.2.</span> <span class="nav-text">默认标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Default-Header"><span class="nav-number">3.2.1.</span> <span class="nav-text">Default Header</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要标题"><span class="nav-number">3.3.</span> <span class="nav-text">主要标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Primary-Header"><span class="nav-number">3.3.1.</span> <span class="nav-text">Primary Header</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#信息标题"><span class="nav-number">3.4.</span> <span class="nav-text">信息标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成功标题"><span class="nav-number">3.5.</span> <span class="nav-text">成功标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Success-Header"><span class="nav-number">3.5.1.</span> <span class="nav-text">Success Header</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#警告标题"><span class="nav-number">3.6.</span> <span class="nav-text">警告标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Warning-Header"><span class="nav-number">3.6.1.</span> <span class="nav-text">Warning Header</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#危险标题"><span class="nav-number">3.7.</span> <span class="nav-text">危险标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Danger-Header"><span class="nav-number">3.7.1.</span> <span class="nav-text">Danger Header</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没有图标说明"><span class="nav-number">3.8.</span> <span class="nav-text">没有图标说明</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#No-icon-note"><span class="nav-number">3.8.1.</span> <span class="nav-text">No icon note</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音乐"><span class="nav-number">3.9.</span> <span class="nav-text">音乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频"><span class="nav-number">3.10.</span> <span class="nav-text">视频</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文章摘要和截断"><span class="nav-number">1.</span> <span class="nav-text">文章摘要和截断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#居中引用"><span class="nav-number">2.</span> <span class="nav-text">居中引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意标注"><span class="nav-number">3.</span> <span class="nav-text">注意标注</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#未定义标题"><span class="nav-number">3.1.</span> <span class="nav-text">未定义标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#默认标题"><span class="nav-number">3.2.</span> <span class="nav-text">默认标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要标题"><span class="nav-number">3.3.</span> <span class="nav-text">主要标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#信息标题"><span class="nav-number">3.4.</span> <span class="nav-text">信息标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成功标题"><span class="nav-number">3.5.</span> <span class="nav-text">成功标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#警告标题"><span class="nav-number">3.6.</span> <span class="nav-text">警告标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#危险标题"><span class="nav-number">3.7.</span> <span class="nav-text">危险标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没有图标说明"><span class="nav-number">3.8.</span> <span class="nav-text">没有图标说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐"><span class="nav-number">4.</span> <span class="nav-text">音乐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视频"><span class="nav-number">5.</span> <span class="nav-text">视频</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
